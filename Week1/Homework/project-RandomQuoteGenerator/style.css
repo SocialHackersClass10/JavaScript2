@@ -16,13 +16,14 @@ body {
 }
 .quote-box {
     background-color: white;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
     text-align: center;
     height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 12px;
 }
 .text {
     display: inline-block;
@@ -53,7 +54,7 @@ span#quote {
 button {
     height: 40px;
     width: 100px;
-    border-radius: 15%;
+    border-radius: 12px;
     color: white;
     font-weight: bold;
     font-size: 1rem;

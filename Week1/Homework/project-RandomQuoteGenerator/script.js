@@ -3,9 +3,10 @@
 const quotes = [
     "Science is nothing but perception",
     "The greatest wealth is to live content with little",
-    "When the mind is thinking it is talking to itself",
-    "Life must be lived as play",
+    "Success is sweet but the secret is sweat",
+    "Every day is a good start",
     "Learning never exhausts the mind",
+    "Work to become, not to acquire",
     "Independence is happiness"
 ];
 //Selecting button and quote text

@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b039c65688.js" crossorigin="anonymous"></script>
 
     <title>JS Issue Tracker</title>
 </head>
 
-<body>
+<body onload="fetchIssues()">
     <div class="container">
         <h1>Javascript Issue Tracker <small> by Stefanos Leventis</small></h1>
         <div class="jumbotron">
@@ -36,7 +37,7 @@
                     <label for="issueAssignedToInput">Assigned To</label>
                     <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible">
                 </div>
-                <button type="submit" class="btn btn-info">Add</button>
+                <button type="submit" class="btn btn-primary">Add</button>
 
             </form>
         </div>
