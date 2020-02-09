@@ -20,15 +20,15 @@
         <div class="container text-center in-the-box">
             <h1 class="display-3">Pomodoro Clock</h1>
             <h2 class="display-5">Session Length</h2>
-            <a href="" class="length-button"><i class="fas fa-caret-up mt-3 "></i></a>
-            <p class="display-4">25</p>
-            <a href="" class="length-button"><i class="fas fa-caret-down mb-3"></i></a>
+            <i class="fas fa-caret-up mb-3 length-button" id="length-up"></i>
+            <p class="display-4" id="length-display">25</p>
+            <i class="fas fa-caret-down mb-3 length-button" id="length-down"></i>
             <div class="container-fluid timer d-flex flex-column align-items-center justify-content-center">
                 <div class="inside-text">
                     <h2>Session</h2>
-                    <h3 class="display-3">25:00</h3>
-                    <a href="" class="time-buttons" id="play"><i class="fas fa-play"></i></a>
-                    <a href="" class="time-buttons" id="pause"><i class=" fas fa-pause"></i></a>
+                    <h3 class="display-3" id="duration"><span id="min">25</span>:<span id="sec">00</span></h3>
+                    <i class="fas fa-play time-buttons" id="play"></i>
+                    <i class=" fas fa-pause time-buttons" id="pause"></i>
                 </div>
             </div>
         </div>
