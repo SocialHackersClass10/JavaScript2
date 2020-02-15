@@ -1,8 +1,8 @@
 "use strict"
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-    const numbers = [];
-    // make array
-    // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+  const numbers = [];
+  // make array
+  // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
 }
 
 threeFive(10, 15, sayThree, sayFive);
