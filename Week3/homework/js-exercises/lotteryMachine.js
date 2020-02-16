@@ -1,11 +1,25 @@
 "use strict"
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
-  // make array
-  // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+
+  for (let n = startIndex; n < stopIndex; n++) {
+    numbers.push(n);
+  }
+
+  numbers.forEach(n => {
+    if (n % 3 === 0) {
+      threeCallback();
+    }
+    else if (n % 5 === 0) {
+      fiveCallback();
+    }
+  })
+}
+function sayThree() {
+  console.log("three");
+}
+function sayFive() {
+  console.log("five");
 }
 
 threeFive(10, 15, sayThree, sayFive);
-
-  // Should create an array [10,11,12,13,14,15]
-  // and call sayFive, sayThree, sayThree, sayFive
