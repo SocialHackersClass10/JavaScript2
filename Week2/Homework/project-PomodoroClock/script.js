@@ -6,6 +6,7 @@ let lengthDisplay = document.querySelector("#length-display");
 let play = document.querySelector("#play");
 let pause = document.querySelector("#pause");
 let timeDisplay = document.querySelector("#time-display");
+let audio = document.querySelector("audio");
 let totalSeconds;
 let paused = false;
 
@@ -39,7 +40,8 @@ function timer(sec) {
         const secondsLeft = Math.round((then - Date.now()) / 1000);
         if (secondsLeft < 0) {
             clearInterval(countdown);
-            timeDisplay.innerHTML = "Time's up!"
+            timeDisplay.innerHTML = "Time's up!";
+            audio.play();
             return;
         }
 

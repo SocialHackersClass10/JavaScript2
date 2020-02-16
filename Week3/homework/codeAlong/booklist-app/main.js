@@ -13,7 +13,7 @@ class UI {
 
         const books = Store.getBooks();
 
-        books.forEach(book => UI.addBookToList(book));
+        books.forEach((book) => UI.addBookToList(book));
     }
     static addBookToList(book) {
         const list = document.querySelector("#book-list");
@@ -31,7 +31,7 @@ class UI {
     }
     static deleteBook(el) {
         if (el.classList.contains("delete")) {
-            el.parentElement.remove();
+            el.parentElement.parentElement.remove();
         }
     }
 
@@ -65,7 +65,7 @@ class Store {
         return books;
     }
 
-    static addBook() {
+    static addBook(book) {
         const books = Store.getBooks();
 
         books.push(book);
@@ -88,7 +88,7 @@ class Store {
 document.addEventListener("DOMContentLoaded", UI.displayBooks);
 
 //Add a book
-document.querySelector("#book-form").addEventListener("submit", e => {
+document.querySelector("#book-form").addEventListener("submit", (e) => {
     e.preventDefault();
 
     const title = document.querySelector("#title").value;
@@ -112,7 +112,7 @@ document.querySelector("#book-form").addEventListener("submit", e => {
 });
 
 //Remove a book
-document.querySelector("#book-list").addEventListener("click", e => {
+document.querySelector("#book-list").addEventListener("click", (e) => {
     UI.deleteBook(e.target);
 
     Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
