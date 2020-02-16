@@ -23,6 +23,7 @@
                     <span>€ </span><input type="number" id="bill">
                     <p>How was your service?</p>
                     <select id="services">
+                        <option value="choose-option">-Choose an option-</option>
                         <option value="outstanding">30% - Outstanding</option>
                         <option value="good">20% - Good</option>
                         <option value="ok">15% - It was OK</option>
@@ -32,17 +33,16 @@
                     <p>How many people are sharing the bill?</p>
                     <input type="number" id="people"><span>people</span>
                     <br>
-                    <button id="calc-button">CALCULATE!</button>
+                    <button type="button" id="calc-button">CALCULATE!</button>
                     <h3>TIP AMOUNT</h3>
-                    <h4 id="tip-amount"></h4>
-                    <h2>€ 0.00</h2>
-                    <h3>each</h2>
+                    <h2 id="tip-amount">€ 0.00</h2>
+                    <h3 id="each">each</h3>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

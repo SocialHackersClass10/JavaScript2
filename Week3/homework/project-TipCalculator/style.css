@@ -71,6 +71,10 @@ div.calc-body{
     font-family: 'Odibee Sans', cursive;
     cursor: pointer;
 }
+#calc-button:hover {
+    background-color: #fd7f7f; 
+ }
+
 input#bill{
     font-family: 'Segoe UI', sans-serif;
     font-size: 1.3rem;
