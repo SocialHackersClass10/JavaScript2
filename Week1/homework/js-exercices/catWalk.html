@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+  </head>
+  <body>
+    <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
+    
+    <script>
+        var myImg= document.querySelector("img");
+        var imgWidth=myImg.width;
+        var imgStyle=myImg.style.left=0; 
+        
+        function catWalk(){
+            
+            if(imgStyle<(innerWidth-myImg.width)){
+                
+                if(Math.round(((innerWidth/2)-(myImg.width/2))/10)==Math.round(imgStyle/10)){
+                    
+                    clearInterval(id);
+                    myImg.src="https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif";
+                    setTimeout(catDanse, 5000);
+                        
+                }
+                imgStyle+=10;
+                myImg.style.left=imgStyle+"px"; 
+            }else{
+                    imgStyle=myImg.style.left=0;
+                    imgStyle+=10;
+                    myImg.style.left=imgStyle+"px";
+                  }
+        }
+        var id=setInterval(catWalk, 50);
+        function catDanse(){
+            myImg.src="http://www.anniemation.com/clip_art/images/cat-walk.gif";
+              id=setInterval(catWalk, 50);
+        }
+        
+    </script>
+
+</body>
+</html>
+
+
+<!--1.Ajoutez une balise de script au bas de la page, où vous mettrez tout votre code.   setInterval((function(){myImg.src="https://tenor.com/StFI.gif";}), 5000);
+2.Créez une variable pour stocker une référence à l'img.   else{ myImg.src="http://www.anniemation.com/clip_art/images/cat-walk.gif";}
+3.Changez le style de l'img pour avoir une "gauche" de "0px", de sorte qu'il commence à gauche des écrans.
+4.Créez une fonction appelée catWalk () qui déplace le chat de 10 pixels à droite de l'endroit où il a commencé, 
+en modifiant la propriété de style «gauche».    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif?itemid=10561424
+5.Appelez cette fonction toutes les 50 millisecondes. Votre chat devrait maintenant se déplacer sur l'écran de gauche à droite. Hourra!
+6.Lorsque le chat atteint le côté droit de l'écran, redémarrez-le sur le côté gauche ("0px"). 
+Ils devraient donc continuer à marcher de gauche à droite sur l'écran, pour toujours et à jamais.
+7.Lorsque le chat atteint le milieu de l'écran, 
+remplacez l'img par une image d'un chat dansant (utilisez cette URL: https://tenor.com/StFI.gif ),
+laissez-le danser pendant 5 secondes, puis remplacez l'img avec l'image originale et faites-la continuer la marche.!-->
+;
