@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="id_page_title"></title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="./main.css" />
+    </head>
+    <body>
+        <div id="id_page_header" class="cls_text_align_right"></div>
+
+        <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif" />
+
+        <script src="./main.js"></script>
+
+        <script>
+            let imgRef=document.getElementsByTagName('IMG')[0];
+            imgRef.style.position='absolute';
+            const srcDance='https://media.tenor.com/images/96abbecd19b93eed75b7a92f46f2330c/tenor.gif';
+            const srcWalk=imgRef.src?imgRef.src:'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+            let startPosX;
+            let nextTimerInterval;
+            const animationStep=9;
+            let newLeft;
+            imgRef.onloadend=catWalk();
+
+            function catWalk(){
+                nextTimerInterval=67;
+                if (imgRef.src!=srcWalk) {imgRef.setAttribute('src',srcWalk)}
+                else if (imgRef.width>0) {
+                    function getHalf(theValue) {return Math.ceil(theValue/2)};
+                    if (!startPosX) {
+                        startPosX=getHalf(document.body.offsetWidth-imgRef.width)%animationStep;
+                        newLeft=startPosX;
+                    } else {newLeft=animationStep+Number(imgRef.style.left.replace(/[^0-9]/g,''))};
+                    if ((newLeft+imgRef.width-(3*animationStep))>document.body.offsetWidth) {newLeft=startPosX};
+                    imgRef.style.left=`${newLeft}px`;
+                    if ((newLeft+getHalf(imgRef.width))-(2*animationStep)==getHalf(document.body.offsetWidth)) {
+                        let imgWalkWidth=imgRef.width;
+                        imgRef.setAttribute('src',srcDance);
+                        imgRef.style.width=`${imgWalkWidth}px`;
+                        nextTimerInterval=3500;
+                    };
+                }
+                setTimeout(catWalk,nextTimerInterval);
+            }
+        </script>
+
+    </body>
+</html>
+

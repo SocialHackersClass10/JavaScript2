@@ -1,0 +1,85 @@
+
+body {
+        margin: 0px 18px;
+        padding: 0px;
+        font-size: 1.5em;
+        font-family: sans-serif;
+    }
+
+div, p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+hr {
+        display: block;
+        margin: 12px auto 12px;
+        color: navy;
+        border-style: outset;
+        border-width: 2px;
+    }
+
+.cls_text_align_left {
+        text-align: left;
+    }
+
+.cls_text_align_right {
+        text-align: right;
+    }
+
+.cls_text_align_center {
+        text-align: center;
+    }
+
+.cls_unselectable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+#id_page_header {
+        padding: 12px 16px 8px 16px;
+        margin: 20px 0px;
+    }
+
+#id_timer_background {
+        background-color: rgb(35,80,95);
+        color: wheat;
+        display: table;
+        margin: 0 auto;
+        border-radius: 50px 15px;
+        padding: 0px 30px 30px 30px;
+    }
+
+#id_timer_container {
+        border-style: outset;
+        border-color: navy;
+        border-radius: 60px;
+        border-width: 7px;
+        font-size: 1.6em;
+        padding: 30px 40px 20px 40px;
+    }
+
+#id_timer_element {
+        display: inline-block;
+        font-size: 2.8em;
+        margin: 0px 30px;
+    }
+
+#id_min_container, #id_sec_container {
+        display: inline-block;
+    }
+
+#id_timer_toggle    {
+        background-color: #3b88c3;
+        display: table;
+        margin: 0 auto;
+        padding: 8px 20px;
+        border-radius: 20px;
+    }
+
+;
+

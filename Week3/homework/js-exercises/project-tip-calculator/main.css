@@ -1,0 +1,229 @@
+
+body {
+        margin: 0px 18px;
+        padding: 0px;
+        font-size: 1.5em;
+        font-family: sans-serif;
+    }
+
+div, p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+hr {
+        display: block;
+        margin: 12px auto 12px;
+        color: navy;
+        border-style: outset;
+        border-width: 2px;
+    }
+
+.cls_text_align_left {
+        text-align: left;
+    }
+
+.cls_text_align_right {
+        text-align: right;
+    }
+
+.cls_text_align_center {
+        text-align: center;
+    }
+
+.cls_unselectable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+#id_page_header {
+        padding: 12px 16px 8px 16px;
+        margin: 20px 0px;
+    }
+
+
+
+#id_calc_background {
+        background-color: rgb(85,50,75);
+        color: black;
+        display: table;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 20px 60px;
+        height: 100%;
+        font-size: .85em;
+        text-align: center;
+    }
+
+#id_calc_header {
+        background-color: black;
+        color: wheat;
+        padding: 20px 40px 12px;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+#id_calc_container_amount,
+#id_calc_container_service,
+#id_calc_container_sharing {
+        background: linear-gradient(to bottom right, wheat, #f5f7fa);
+        margin: 0px;
+        padding: 15px 20px 15px;
+    }
+
+#id_calc_container_amount {
+        padding-top: 20px;
+    }
+
+#id_calc_container_sharing {
+        padding-bottom: 16px;
+    }
+
+#id_calc_container_footer {
+        background: linear-gradient(to bottom right, gold, orange);
+        font-size: 1.2em;
+        margin: 0px;
+        padding: 15px 20px 15px;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+#id_service_quality_header,
+#id_people_total_header,
+#id_bill_total_header {
+        font-size: 1.2em;
+        text-align: left;
+        padding: 0px 0px 10px;
+    }
+
+#id_people_total_header {
+        padding-bottom: 16px;
+    }
+
+#id_bill_total_edit {
+        font-size: 1.3em;
+        width: 6em;
+        margin-left: 6px;
+        text-align: right;
+    }
+
+#id_service_quality_group {
+        margin-left: 40px;
+        text-align: left;
+        padding-right: 3px;
+        font-size: 1.2em;
+    }
+
+#id_service_quality_styling {
+        display: inline-block;
+        padding: 0px 8px 5px;
+        vertical-align: bottom;
+    }
+
+#id_service_quality_rating {
+        position: relative;
+        height: 1.4em;
+        width: 7em;
+        margin: 0;
+        padding: 0;
+        background: url("./resources/star_empty.bmp");
+        background-size: 1.4em 1.4em;
+        display: inline-block;
+    }
+
+.cls_service_quality_label {
+        position: absolute;
+        height: 100%;
+        background-size: 1.4em 1.4em;
+    }
+
+.cls_service_quality_radio {
+        margin: 0;
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px,1px,1px,1px);
+    }
+
+#id_service_quality_rating .cls_service_quality_label:nth-of-type(1) {
+        z-index: 5;
+        width: 20%;
+    }
+
+#id_service_quality_rating .cls_service_quality_label:nth-of-type(2) {
+        z-index: 4;
+        width: 40%;
+    }
+
+#id_service_quality_rating .cls_service_quality_label:nth-of-type(3) {
+        z-index: 3;
+        width: 60%;
+    }
+
+#id_service_quality_rating .cls_service_quality_label:nth-of-type(4) {
+        z-index: 2;
+        width: 80%;
+    }
+
+#id_service_quality_rating .cls_service_quality_label:nth-of-type(5) {
+        z-index: 1;
+        width: 100%;
+    }
+
+.cls_service_quality_radio:checked + .cls_service_quality_label,
+.cls_service_quality_radio:focus + .cls_service_quality_label,
+.cls_service_quality_label:hover {
+        background-image: url("./resources/star_filled.bmp");
+    }
+
+.cls_service_quality_label:hover ~ .cls_service_quality_label {
+        background-image: url("./resources/star_empty.bmp");
+    }
+
+.cls_service_quality_radio:focus ~ .cls_service_quality_focus {
+        position: absolute;
+        top: -3px;
+        right: -3px;
+        bottom: -3px;
+        left: -3px;
+        outline: 1px solid blue;
+    }
+
+#id_service_quality_text {
+        display: inline-block;
+        padding: 0px 0px 9px 8px;
+        margin: 0px;
+        vertical-align: bottom;
+    }
+
+#id_service_quality_tip {
+        font-size: 0.66em;
+        text-align: right;
+        margin: 0px 0px 0px;
+    }
+
+#id_people_total_sub,
+#id_people_total_add {
+        border: 1px solid blue;
+        border-radius: 45%;
+        padding: 3px 3px 1px;
+        width: 1.8em;
+        background: lightblue;
+        display: inline-block;
+    }
+#id_people_total_sub:hover,
+#id_people_total_add:hover {
+        background: gold;
+    }
+
+#id_people_total_text {
+        font-size: 1.2em;
+        width: 8em;
+        display: inline-block;
+    }
+
+;
+

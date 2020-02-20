@@ -1,0 +1,44 @@
+
+body {
+        margin: 0px;
+        padding: 0px;
+        font-size: 150%;
+        font-family: sans-serif;
+    }
+
+.cls_text_align_left {
+        text-align: left;
+    }
+
+.cls_text_align_right {
+        text-align: right;
+    }
+
+.cls_text_align_center {
+        text-align: center;
+    }
+
+.cls_background_color_gold {
+        background-color: gold;
+    }
+
+div {
+        padding:12px 16px;
+        margin: 20px 20px;
+    }
+
+th, td {
+        padding: 7px 10px 0px 9px;
+        border-radius: 4px;
+    }
+
+table tr:nth-child(odd) td {
+        background-color: gold;
+    }
+
+table tr:nth-child(even) td {
+        background-color: silver;
+    }
+
+;
+

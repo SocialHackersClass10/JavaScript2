@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="id_page_title"></title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="./main.css" />
+    </head>
+    <body>
+        <div id="id_page_header" class="cls_text_align_right"></div>
+
+        <div id="id_calc_background" class="cls_unselectable">
+            <p id="id_calc_header">TIP CALCULATOR</p>
+            <div id="id_calc_container_amount">
+                <p id="id_bill_total_header">How much was your bill?</p>
+                <div class="cls_text_align_right">
+                    <span>€</span>
+                    <input id="id_bill_total_edit"></input>
+                </div>
+            </div>
+            <div id="id_calc_container_service">
+                <p id="id_service_quality_header">How was your service?</p>
+                <div id="id_service_quality_group">
+                    <div id="id_service_quality_styling">
+                        <div id="id_service_quality_rating">
+                            <input type="radio" value="0" name="rating_service_quality" checked="true"
+                                    id="id_service_quality_radio_1" class="cls_service_quality_radio"/>
+                            <label for="id_service_quality_radio_1" class="cls_service_quality_label"></label>
+                            <input type="radio" value="1" name="rating_service_quality"
+                                    id="id_service_quality_radio_2" class="cls_service_quality_radio"/>
+                            <label for="id_service_quality_radio_2" class="cls_service_quality_label"></label>
+                            <input type="radio" value="2" name="rating_service_quality"
+                                    id="id_service_quality_radio_3" class="cls_service_quality_radio"/>
+                            <label for="id_service_quality_radio_3" class="cls_service_quality_label"></label>
+                            <input type="radio" value="3" name="rating_service_quality"
+                                    id="id_service_quality_radio_4" class="cls_service_quality_radio"/>
+                            <label for="id_service_quality_radio_4" class="cls_service_quality_label"></label>
+                            <input type="radio" value="4" name="rating_service_quality"
+                                    id="id_service_quality_radio_5" class="cls_service_quality_radio"/>
+                            <label for="id_service_quality_radio_5" class="cls_service_quality_label"></label>
+                            <div class="cls_service_quality_focus"></div>
+                        </div>
+                    </div>
+                    <p id="id_service_quality_text">id_service_quality_text</p>
+                    <p id="id_service_quality_tip">id_service_quality_tip</p>
+                </div>
+            </div>
+            <div id="id_calc_container_sharing">
+                <p id="id_people_total_header">How many are sharing the bill?</p>
+                <span id="id_people_total_sub">➖</span>
+                <span id="id_people_total_text">id_people_total_text</span>
+                <span id="id_people_total_add">➕</span>
+            </div>
+            <div id="id_calc_container_footer">
+                <p id="id_calc_tip_header">id_calc_tip_header</p>
+                <p id="id_calc_tip_amount">id_calc_tip_amount</p>
+                <p id="id_calc_tip_each">id_calc_tip_each</p>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
+
