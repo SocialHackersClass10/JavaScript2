@@ -12,7 +12,7 @@
 
     function runBingo (lowRange,highRange) {
         console.log(`Checking for Bingo for 3 and 5 in the range ${lowRange} to ${highRange} `);
-        bingoThreeFive(lowRange,highRange,pCallbackThree,pCallbackFive);
+        bingoThreeFive(lowRange,highRange,threeCallback,fiveCallback);
     }
 
     function bingoThreeFive (pNumFrom,pNumTo,pCallbackThree,pCallbackFive) {
@@ -26,11 +26,11 @@
         });
     };
 
-    function pCallbackThree (theNumber) {
+    function threeCallback (theNumber) {
         console.log(`We have a Winner for 3 on the value ${theNumber} `);
     };
 
-    function pCallbackFive (theNumber) {
+    function fiveCallback (theNumber) {
         console.log(`We have a Winner for 5 on the value ${theNumber} `);
     };
 

@@ -110,7 +110,7 @@ hr {
     }
 
 #id_service_quality_group {
-        margin-left: 40px;
+        margin-left: 25px;
         text-align: left;
         padding-right: 3px;
         font-size: 1.2em;
@@ -174,13 +174,19 @@ hr {
     }
 
 .cls_service_quality_radio:checked + .cls_service_quality_label,
-.cls_service_quality_radio:focus + .cls_service_quality_label,
-.cls_service_quality_label:hover {
+.cls_service_quality_radio:focus + .cls_service_quality_label
+        /* ,.cls_service_quality_label:hover */
+    {
         background-image: url("./resources/star_filled.bmp");
     }
 
+/*
 .cls_service_quality_label:hover ~ .cls_service_quality_label {
         background-image: url("./resources/star_empty.bmp");
+    }
+*/
+.cls_service_quality_label:hover {
+        cursor: pointer;
     }
 
 .cls_service_quality_radio:focus ~ .cls_service_quality_focus {
@@ -212,6 +218,7 @@ hr {
         padding: 3px 3px 1px;
         width: 1.8em;
         background: lightblue;
+        cursor: pointer;
         display: inline-block;
     }
 #id_people_total_sub:hover,
@@ -226,4 +233,3 @@ hr {
     }
 
 ;
-
